@@ -44,7 +44,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
         if (v.id == R.id.add) {
             if (num1.isEmpty() || num2.isEmpty()) {
-                Snackbar.make(v, "数字を正しく入力してください。", Snackbar.LENGTH_INDEFINITE).show()
+                Snackbar.make(v, "数字を正しく入力してください。", Snackbar.LENGTH_LONG).show()
             } else {
                 var answer = num1.toDouble() + num2.toDouble()
                 val intent = Intent(this, Result::class.java)
@@ -55,7 +55,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
         if (v.id == R.id.subtract) {
             if (num1.isEmpty() || num2.isEmpty()) {
-                Snackbar.make(v, "数字を正しく入力してください。", Snackbar.LENGTH_INDEFINITE).show()
+                Snackbar.make(v, "数字を正しく入力してください。", Snackbar.LENGTH_LONG).show()
             } else {
                 var answer = num1.toDouble() - num2.toDouble()
                 val intent = Intent(this, Result::class.java)
@@ -66,7 +66,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
         if (v.id == R.id.multiply) {
             if (num1.isEmpty() || num2.isEmpty()) {
-                Snackbar.make(v, "数字を正しく入力してください。", Snackbar.LENGTH_INDEFINITE).show()
+                Snackbar.make(v, "数字を正しく入力してください。", Snackbar.LENGTH_LONG).show()
             } else {
                 var answer = num1.toDouble() * num2.toDouble()
                 val intent = Intent(this, Result::class.java)
@@ -77,9 +77,9 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
         if (v.id == R.id.divide) {
             if (num1.isEmpty() || num2.isEmpty()) {
-                Snackbar.make(v, "数字を正しく入力してください。", Snackbar.LENGTH_INDEFINITE).show()
+                Snackbar.make(v, "数字を正しく入力してください。", Snackbar.LENGTH_LONG).show()
             } else if (num1 == "0") {
-                Snackbar.make(v, "「一つ目の数字」は０以外を入力してください", Snackbar.LENGTH_INDEFINITE).show()
+                Snackbar.make(v, "「一つ目の数字」は０以外を入力してください", Snackbar.LENGTH_LONG).show()
             } else {
                 var answer = num1.toDouble() / num2.toDouble()
                 val intent = Intent(this, Result::class.java)

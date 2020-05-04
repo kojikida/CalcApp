@@ -25,6 +25,7 @@
         android:textSize="15sp"
         android:layout_below="@+id/textViewResult"
         android:text="Result"
+        android:inputType="number|numberDecimal"
         android:id="@+id/result"/>
 
 </LinearLayout>
